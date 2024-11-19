@@ -1,0 +1,71 @@
+/* Applique la police Roboto à l'ensemble de la page */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Police principale */
+    background-color: #f8f9fa; /* Fond clair comme iOS */
+    color: #333; /* Texte sombre */
+    text-align: center; /* Centrer le contenu */
+    margin-top: 50px; /* Espacement supérieur */
+}
+
+/* Titre principal de la calculatrice */
+.title {
+    font-size: 2.5rem; /* Grande taille pour le titre */
+    font-weight: 700; /* Texte épais */
+    color: #ffffff; /* Texte blanc */
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+/* Conteneur de la calculatrice */
+.calculator {
+    border: none; /* Pas de bordure */
+    border-radius: 20px; /* Coins arrondis comme un iPhone */
+    background-color: #fff; /* Fond blanc brillant */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    padding: 20px; /* Espacement intérieur */
+    max-width: 300px; /* Taille fixe pour ressembler à un téléphone */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+/* Écran d'affichage */
+.display {
+    background-color: #f0f0f0; /* Fond gris clair */
+    color: #000; /* Texte noir */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px; /* Espacement intérieur */
+    font-size: 1.5rem; /* Taille du texte */
+    border: 1px solid #ddd; /* Légère bordure */
+    text-align: right; /* Alignement à droite */
+    outline: none; /* Pas de contour au clic */
+}
+
+/* Conteneur des boutons */
+.buttons {
+    display: grid; /* Organisation en grille */
+    grid-template-columns: repeat(4, 60px); /* Boutons plus larges */
+    gap: 15px; /* Espacement entre les boutons */
+    margin-top: 20px; /* Espace entre l'écran et les boutons */
+}
+
+/* Styles des boutons */
+.button {
+    background-color: #e0e0e0; /* Fond clair comme iOS */
+    color: #000; /* Texte noir */
+    border: none; /* Pas de bordure */
+    border-radius: 10px; /* Coins arrondis */
+    font-size: 1.2rem; /* Taille du texte */
+    font-weight: 400; /* Texte normal */
+    cursor: pointer; /* Curseur pointeur */
+    transition: all 0.2s ease-in-out; /* Animation douce */
+}
+
+/* Effet de survol */
+.button:hover {
+    background-color: #d4d4d4; /* Fond légèrement plus sombre au survol */
+}
+
+/* Effet de clic */
+.button:active {
+    background-color: #c8c8c8; /* Fond encore plus sombre quand on clique */
+    transform: scale(0.95); /* Réduit légèrement le bouton */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre visible */
+}
